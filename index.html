@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ghita EL KADIRI | Cloud DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- QR Code Modal -->
+    <div id="qr-modal" class="modal">
+        <div c1class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Scanner pour accéder au CV</h3>
+            <div id="qrcode"></div>
+            <p class="qr-url"></p>
+        </div>
+    </div>
+
+    <!-- Floating QR Button -->
+    <button class="qr-floating-btn" onclick="openQRModal()">
+        <i class="fas fa-qrcode"></i>
+    </button>
+
+    <div class="cv-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="assets/profile.png" alt="Ghita EL KADIRI" class="profile-photo">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">Ghita EL KADIRI</h1>
+                        <p class="title">Ingénieure Cloud Computing & Virtualization | DevOps | DevSecOps</p>
+                        <div class="badges">
+                            <span class="badge azure"><i class="fab fa-microsoft"></i> Azure</span>
+                            <span class="badge aws"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="badge redhat"><i class="fab fa-redhat"></i> Red Hat</span>
+                            <span class="badge devops"><i class="fas fa-infinity"></i> DevOps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:ekghita@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ekghita@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/ghita-el-kadiri" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/ghita-el-kadiri</span>
+                    </a>
+                    <span class="contact-item location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rabat, Maroc</span>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="section-content">
+                <h2 class="section-title"><i class="fas fa-user-circle"></i> À Propos</h2>
+                <p class="about-text">
+                    Ingénieure Cloud Computing Virtualization & DevOps, <strong>4× certifiée</strong> (Azure, AWS, Red Hat, DevOps), 
+                    avec expérience en conception d'infrastructures sécurisées sur Azure, automatisation IaC avec Terraform/Ansible 
+                    et mise en place de pipelines CI/CD Azure DevOps & GitLab. Expérimentée dans le monitoring (Dynatrace, ELK) 
+                    et la virtualisation (VMware ESXi). <span class="highlight">Mobile et disponible immédiatement.</span>
+                </p>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Experience Section -->
+                <section class="experience-section">
+                    <h2 class="section-title"><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3 class="job-title">Cloud DevOps Intern</h3>
+                                    <span class="job-date"><i class="far fa-calendar-alt"></i> Février 2025 – Août 2025</span>
+                                </div>
+                                <div class="company">
+                                    <i class="fas fa-building"></i> AXA GBS — Rabat, Maroc
+                                </div>
+                                <ul class="job-tasks">
+                                    <li>Conception et déploiement d'une infrastructure Cloud sécurisée sur Microsoft Azure (IaC avec Terraform)</li>
+                                    <li>Mise en place de pipelines CI/CD sur Azure DevOps et d'un système de sauvegarde versionnée des configurations Dynatrace (Monaco)</li>
+                                    <li>Implémentation d'une solution de monitoring centralisée Dynatrace SaaS et automatisation du déploiement des agents (ActiveGate, OneAgent) sur des VM Linux via Ansible</li>
+                                    <li>Mise en œuvre d'Azure Load Balancer, de règles NSG, de la segmentation réseau et authentification SSH sécurisée</li>
+                                    <li>Automatisation des sauvegardes Dynatrace par WebJob Azure planifié (CRON) avec Azure Blob Storage</li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>Azure</span>
+                                    <span>Terraform</span>
+                                    <span>Ansible</span>
+                                    <span>Dynatrace</span>
+                                    <span>CI/CD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3 class="job-title">Systèmes et Virtualisation – Stage PFA</h3>
+                                    <span class="job-date"><i class="far fa-calendar-alt"></i> Juin 2024 – Août 2024</span>
+                                </div>
+                                <div class="company">
+                                    <i class="fas fa-building"></i> ONEE BRANCHE EAU — Rabat, Maroc
+                                </div>
+                                <ul class="job-tasks">
+                                    <li>Étude et présentation des plateformes d'infrastructures standard, convergée et hyperconvergée</li>
+                                    <li>Analyse comparative des architectures Dell EMC et VMware ESXi pour des environnements virtualisés</li>
+                                    <li>Étude de l'évolution des plateformes de virtualisation et de leurs usages dans les applications Cloud</li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>VMware ESXi</span>
+                                    <span>Dell EMC</span>
+                                    <span>Virtualisation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3 class="job-title">Développeuse Full Stack – Stagiaire</h3>
+                                    <span class="job-date"><i class="far fa-calendar-alt"></i> Juin 2023 – Juil. 2023</span>
+                                </div>
+                                <div class="company">
+                                    <i class="fas fa-building"></i> ASSURANCES LYAZIDI — Rabat, Maroc
+                                </div>
+                                <ul class="job-tasks">
+                                    <li>Recherche et analyse de l'e-réputation de l'entreprise</li>
+                                    <li>Intégration de données à partir de fichiers CSV dans une base de données existante</li>
+                                    <li>Vérification et validation de l'affichage des données sur le site web pour garantir la bonne intégration des données</li>
+                                </ul>
+                                <div class="tech-tags">
+                                    <span>Full Stack</span>
+                                    <span>Base de données</span>
+                                    <span>CSV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="education-section">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Formation</h2>
+                    
+                    <div class="education-grid">
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3>Ingénieure Cloud Computing & Virtualization</h3>
+                                <p class="school">Université Internationale de Rabat</p>
+                                <p class="period"><i class="far fa-calendar-alt"></i> Sept. 2022 – Juil. 2025</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Rabat, Maroc</p>
+                            </div>
+                        </div>
+
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3>Classes Préparatoires Intégrées</h3>
+                                <p class="school">INSA Euro-Méditerranée de Fès</p>
+                                <p class="period"><i class="far fa-calendar-alt"></i> Sept. 2019 – Juin 2022</p>
+                                <p class="location"><i class="fas fa-map-marker-alt"></i> Fès, Maroc</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="projects-section">
+                    <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projets</h2>
+                    
+                    <div class="projects-grid">
+                        <!-- Project 1: Azure Networking -->
+                        <div class="project-card azure-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Azure Networking: Hybrid Connectivity with VPN Gateway, BGP & Monitoring</h3>
+                                    <span class="project-category">Cloud Infrastructure</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Validation d'un pattern réseau multi-site utilisant les services cloud-native Azure. Conception d'une infrastructure sécurisée, scalable et observable.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Objectifs réalisés :</h4>
+                                <ul>
+                                    <li>Déploiement de 3 VNets avec layout cohérent (subnet1, subnet2, GatewaySubnet)</li>
+                                    <li>Implémentation des NSG par VNet pour le contrôle du trafic</li>
+                                    <li>Logging centralisé avec Log Analytics Workspace</li>
+                                    <li>Configuration VPN Gateway avec tunnels VNet1↔VNet2 et VNet2↔VNet3</li>
+                                    <li>Activation de BGP pour l'échange automatique de routes</li>
+                                    <li>Déploiement de VMs Linux et validation de la connectivité end-to-end</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Azure VPN Gateway</span>
+                                <span>BGP</span>
+                                <span>NSG</span>
+                                <span>VNet Peering</span>
+                                <span>Log Analytics</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Cloud DevOps Platform -->
+                        <div class="project-card devops-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Cloud DevOps | Plateforme Cloud-Native de Gestion et Distribution de Contenu Vidéo</h3>
+                                    <span class="project-category">DevOps & Cloud-Native</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Conception et implémentation d'une architecture cloud-native robuste pour la gestion et distribution de contenu vidéo en ligne.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Réalisations techniques clés :</h4>
+                                <ul>
+                                    <li>Pipeline CI/CD complet avec Azure DevOps (tests, sécurité OWASP, tests de charge Locust)</li>
+                                    <li>Conteneurisation Docker et orchestration via Azure Kubernetes Service (AKS)</li>
+                                    <li>Infrastructure as Code (IaC) avec Terraform</li>
+                                    <li>Automatisation du déploiement avec Ansible</li>
+                                    <li>API backend Python/Flask pour le traitement vidéo</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Azure DevOps</span>
+                                <span>AKS</span>
+                                <span>Docker</span>
+                                <span>Terraform</span>
+                                <span>Ansible</span>
+                                <span>Python/Flask</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: E-commerce -->
+                        <div class="project-card web-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Plateforme E-commerce avec Django</h3>
+                                    <span class="project-category">Full Stack Development</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Conception d'une plateforme e-commerce offrant une expérience d'achat en ligne conviviale et fluide.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Tâches réalisées :</h4>
+                                <ul>
+                                    <li>Élaboration des maquettes avec Figma</li>
+                                    <li>Développement du backend avec Django</li>
+                                    <li>Utilisation de Visual Studio Code comme éditeur</li>
+                                    <li>Collaboration en temps réel au sein de l'équipe</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Django</span>
+                                <span>Figma</span>
+                                <span>VS Code</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Azure Private Link -->
+                        <div class="project-card security-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Securing Azure Blob Storage with Azure Private Link</h3>
+                                    <span class="project-category">Cloud Security</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Configuration d'Azure Private Link pour Azure Blob Storage, permettant à une VM d'accéder au Storage Account via une connectivité privée.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Réalisations :</h4>
+                                <ul>
+                                    <li>Création d'un Private Endpoint ciblant le blob sub-resource</li>
+                                    <li>Intégration au VNet/Subnet pour accès via IP privée</li>
+                                    <li>Configuration DNS privée automatique</li>
+                                    <li>Validation via nslookup depuis la VM (RDP)</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Azure Private Link</span>
+                                <span>Private Endpoint</span>
+                                <span>Blob Storage</span>
+                                <span>Private DNS</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: Docker & Load Balancer -->
+                        <div class="project-card infra-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Optimisation des Services Cloud : Docker & Load Balancers</h3>
+                                    <span class="project-category">Cloud Infrastructure</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Création d'une infrastructure scalable et résiliente combinant Docker avec des load balancers sur Azure.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Réalisations :</h4>
+                                <ul>
+                                    <li>Création d'images Docker personnalisées via Dockerfiles</li>
+                                    <li>Orchestration avec docker-compose.yml</li>
+                                    <li>Mise en place d'un Load Balancer</li>
+                                    <li>Pipelines CI/CD pour automatisation</li>
+                                    <li>Tests de charge et performance</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Docker</span>
+                                <span>Docker Compose</span>
+                                <span>Load Balancer</span>
+                                <span>CI/CD</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: SDN Security -->
+                        <div class="project-card network-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Simulation d'attaques DoS/DDoS sur contrôleurs SDN</h3>
+                                    <span class="project-category">Network Security</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Simulation d'attaques DoS/DDoS ciblant des contrôleurs SDN pour analyser l'impact sur les flux réseau et les communications OpenFlow.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Technologies utilisées :</h4>
+                                <ul>
+                                    <li>Mininet pour l'environnement de test</li>
+                                    <li>Open vSwitch pour la virtualisation réseau</li>
+                                    <li>Wireshark pour l'analyse du trafic</li>
+                                    <li>Analyse des perturbations sur la gestion des flux</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Mininet</span>
+                                <span>Open vSwitch</span>
+                                <span>Wireshark</span>
+                                <span>OpenFlow</span>
+                                <span>SDN</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 7: Redis -->
+                        <div class="project-card database-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h3 class="project-title">Redis Server & RedisInsight</h3>
+                                    <span class="project-category">NoSQL Database</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Mise en place d'une instance Redis Server et démonstration des fonctionnalités clés d'une base NoSQL in-memory.
+                            </p>
+                            <div class="project-objectives">
+                                <h4>Couverture du projet :</h4>
+                                <ul>
+                                    <li>Création et connexion à la base</li>
+                                    <li>Manipulation des data structures : Strings, Hashes, Lists, Sets</li>
+                                    <li>Gestion de l'expiration des keys (TTL)</li>
+                                    <li>Démonstration du modèle Publish/Subscribe (Pub/Sub)</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span>Redis</span>
+                                <span>RedisInsight</span>
+                                <span>NoSQL</span>
+                                <span>Pub/Sub</span>
+                                <span>In-Memory</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Certifications Section -->
+                <section class="certifications-section">
+                    <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+                    
+                    <div class="certifications-grid">
+                        <a href="https://learn.microsoft.com/fr-fr/users/ghitaelkadiri-9326/credentials/d302e269587626a1" target="_blank" class="cert-card azure-cert">
+                            <div class="cert-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Microsoft Azure Fundamentals</h4>
+                                <p class="cert-code">AZ-900</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Sept. 2024</span>
+                            </div>
+                            <div class="cert-badge verified">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ghita-el-kadiri/details/certifications/1751993297866/single-media-viewer/?profileId=ACoAACRox3YBmAethnNPRaUodiu0CG7o8x-YgB4" target="_blank" class="cert-card redhat-cert">
+                            <div class="cert-icon">
+                                <i class="fab fa-redhat"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Red Hat OpenShift Administration I</h4>
+                                <p class="cert-code">DO180 - Operating a Production Cluster</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Janv. 2025</span>
+                            </div>
+                            <div class="cert-badge verified">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://skillsoft.digitalbadges-eu.skillsoft.com/203b08b0-0dc3-4f80-91a3-48599a95bf89#acc.AUk6Zrjq" target="_blank" class="cert-card aws-cert">
+                            <div class="cert-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>AWS Cloud Practitioner 2023</h4>
+                                <p class="cert-code">Automatisation et services gérés</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Févr. 2025</span>
+                            </div>
+                            <div class="cert-badge verified">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://top3score.com/public/s6uXYq9erAwVkf0U7JKeEzn8/" target="_blank" class="cert-card devops-cert">
+                            <div class="cert-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Évaluation DevOps TopScore3</h4>
+                                <p class="cert-code">5e place</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Oct. 2025</span>
+                            </div>
+                            <div class="cert-badge gold">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://www.coursera.org/account/accomplishments/verify/KUN5270U3MN0" target="_blank" class="cert-card coursera-cert">
+                            <div class="cert-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Continuous Delivery & Managing Builds</h4>
+                                <p class="cert-code">Azure DevOps | Coursera</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Oct. 2025</span>
+                            </div>
+                            <div class="cert-badge verified">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/posts/ghita-el-kadiri_softskills-management-leadership-activity-7406631223449526272-wfj8" target="_blank" class="cert-card soft-cert">
+                            <div class="cert-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Soft Skills & Management</h4>
+                                <p class="cert-code">Atelier Multiculturel</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Nov. 2025</span>
+                            </div>
+                            <div class="cert-badge verified">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ghita-el-kadiri/details/certifications/1727354250874/single-media-viewer/?profileId=ACoAACRox3YBmAethnNPRaUodiu0CG7o8x-YgB4" target="_blank" class="cert-card language-cert">
+                            <div class="cert-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>DALF C1</h4>
+                                <p class="cert-code">Diplôme Approfondi de Langue Française</p>
+                                <span class="cert-date"><i class="far fa-calendar-check"></i> Certifié</span>
+                            </div>
+                            <div class="cert-badge verified">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="skills-section">
+                    <h2 class="section-title"><i class="fas fa-cogs"></i> Compétences</h2>
+                    
+                    <div class="skills-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & Virtualization</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag azure">Microsoft Azure</span>
+                            <span class="skill-tag aws">AWS</span>
+                            <span class="skill-tag">Elastic Cloud</span>
+                            <span class="skill-tag">OpenStack</span>
+                            <span class="skill-tag vmware">VMware</span>
+                            <span class="skill-tag vmware">VMware ESXi</span>
+                            <span class="skill-tag">Dell EMC</span>
+                            <span class="skill-tag">Applications Cloud</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-infinity"></i> DevOps, CI/CD & IaC</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag terraform">Terraform</span>
+                            <span class="skill-tag ansible">Ansible</span>
+                            <span class="skill-tag azure">Azure DevOps</span>
+                            <span class="skill-tag kubernetes">Kubernetes</span>
+                            <span class="skill-tag docker">Docker</span>
+                            <span class="skill-tag gitlab">GitLab CI/CD</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag redhat">OpenShift</span>
+                            <span class="skill-tag">YAML</span>
+                            <span class="skill-tag">WebJobs</span>
+                            <span class="skill-tag">Monaco (MaC)</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-chart-line"></i> Monitoring, Observability & Tests</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag dynatrace">Dynatrace SaaS</span>
+                            <span class="skill-tag dynatrace">Monaco</span>
+                            <span class="skill-tag elk">Elasticsearch</span>
+                            <span class="skill-tag elk">Logstash</span>
+                            <span class="skill-tag elk">Kibana</span>
+                            <span class="skill-tag">Apache JMeter</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag redis">Redis</span>
+                            <span class="skill-tag redis">Redis Insight</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-network-wired"></i> Réseaux, SDN & Simulation</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Mininet</span>
+                            <span class="skill-tag">GNS3</span>
+                            <span class="skill-tag">ONOS</span>
+                            <span class="skill-tag">OpenVirteX</span>
+                            <span class="skill-tag">OpenFlow</span>
+                            <span class="skill-tag">OpenDaylight</span>
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">NSG</span>
+                            <span class="skill-tag">Load Balancer</span>
+                            <span class="skill-tag">SSH sécurisé</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-database"></i> Bases de données & NoSQL</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MariaDB</span>
+                            <span class="skill-tag mongodb">MongoDB</span>
+                            <span class="skill-tag">NoSQL</span>
+                            <span class="skill-tag">phpMyAdmin</span>
+                            <span class="skill-tag">Hadoop</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-code"></i> Systèmes & Langages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag linux">Ubuntu</span>
+                            <span class="skill-tag linux">Linux</span>
+                            <span class="skill-tag python">Python</span>
+                            <span class="skill-tag java">Java</span>
+                            <span class="skill-tag">Langage C</span>
+                            <span class="skill-tag php">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-tools"></i> Outils & IDE</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag vscode">VS Code</span>
+                            <span class="skill-tag">Eclipse</span>
+                            <span class="skill-tag">Apache NetBeans</span>
+                            <span class="skill-tag">PuTTY</span>
+                            <span class="skill-tag">XAMPP</span>
+                            <span class="skill-tag">Scrum (Agile)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Languages Section -->
+                <section class="languages-section">
+                    <h2 class="section-title"><i class="fas fa-globe"></i> Langues</h2>
+                    
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Arabe</span>
+                                <span class="language-level">Langue maternelle</span>
+                            </div>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Français</span>
+                                <span class="language-level">Bilingue (DALF C1)</span>
+                            </div>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="language-item">
+                            <div class="language-info">
+                                <span class="language-name">Anglais</span>
+                                <span class="language-level">Avancé</span>
+                            </div>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Soft Skills Section -->
+                <section class="soft-skills-section">
+                    <h2 class="section-title"><i class="fas fa-lightbulb"></i> Soft Skills</h2>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Analyse & résolution de problèmes</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Prise de décision</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Curiosité technique</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Apprentissage rapide</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Travail en équipe</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Ghita EL KADIRI - CV Web</p>
+                <div class="footer-links">
+                    <a href="mailto:ekghita@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/ghita-el-kadiri" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <button onclick="openQRModal()" class="qr-btn"><i class="fas fa-qrcode"></i></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
